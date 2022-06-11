@@ -6,27 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desarrollo Web</title>
-    <link rel="shortcut icon" href="icon.png" type="image/png">
+    <link rel="shortcut icon" href="img/icon.png" type="image/png">
+    <!-- jQuery 1.8 or later, 33 KB -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
+    <!-- Fotorama from CDNJS, 19 KB -->
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 </head>
 
 <body>
-    <h1>Clase 02</h1>
+    <header>
+        <img src="img/icon.png" width="48" alt="Logo">
+        <h1>Desarrollo Web</h1>
+        <p>Web Sobre HTML y CSS</p>
+    </header>
 
-     
-    <a href="index.html">
-        <img src="icon.png" width="48" alt="Logo">
-    </a> 
-    <a href="contactos.html"> Ir a contactos </a> |
-    <a href="blog.html"> Blog</a> |
-    <a href="perfil.html"> Perfil</a> |
-    <a href="https://davinci.edu.ar" target="_blank">Donde estudio</a>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">incio</a> 
+            </li>
+            <li>
+                <a href="contactos.html"> Ir a contactos </a>
+            </li>
+            <li>
+                <a href="blog.html"> Blog</a>
+            </li>
+            <li>
+                <a href="perfil.html"> Perfil</a>
+            </li>
+            <li>
+                <a href="https://davinci.edu.ar" target="_blank">Donde estudio</a>
+            </li>
+        </ul>
+    </nav>
+    
 
-    <div>
-       <video src="coder.mp4" width="1200" autoplay loop></video>
-        <img src="developer.jpg" width="640" alt="Desarrollo Web">
-    </div>
 
+    <main>
+        <div class="fotorama" data-width="1200" data-autoplay="true" data-allowfullscreen="true" data-transition="crossfade" >
+            <img src="img/foto_01.jpg" alt="Codigo de programación">
+            <img src="img/foto_02.jpg" alt="Imagen laptop">
+            <img src="img/foto_03.jpg" alt="">
+            <img src="img/foto_04.jpg" alt="">
+        </div>
+    </main>
+
+    <footer>
+        <img src="img/icon.png" width="48" alt="Logo">
+        <p>Copyright 2022 - Desarrollo Web Todos los derechos reservados.</p>
+        <p>Redes Sociales</p>
+    </footer>
 </body>
 
 </html>
